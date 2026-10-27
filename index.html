@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ular Tangga Pidato – Teks Ceramah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>🌾 Ular Tangga Pidato <small>Teks Ceramah · Kelas XI APHP</small></h1>
+  <div class="credit">Made by Mukti Muhtadi with ❤️</div>
+  <div class="ctrl">
+    <button id="btnPause">⏸ Jeda</button>
+    <button id="btnRestart">🔄 Mulai Ulang</button>
+  </div>
+</header>
+
+<main>
+  <section id="boardWrap">
+    <div id="board"></div>
+    <svg id="deco" viewBox="0 0 600 500" aria-hidden="true"></svg>
+    <div id="tokens"></div>
+  </section>
+  <aside>
+    <div id="turn"></div>
+    <button id="dice" aria-label="Lempar dadu">🎲</button>
+    <p class="hint">Klik dadu atau tekan Spasi</p>
+    <div id="msg">Selamat datang!</div>
+    <ul id="teams"></ul>
+    <div class="legend">❓ Kuis · 🎤 Bicara · 🐍 Ular · 🎋 Tangga</div>
+  </aside>
+</main>
+
+<div id="modal" class="overlay hidden"><div class="box" id="box"></div></div>
+<div id="pause" class="overlay hidden">
+  <div class="box center">
+    <h2>⏸ Permainan dijeda</h2>
+    <button id="btnResume" class="go">▶ Lanjutkan</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
